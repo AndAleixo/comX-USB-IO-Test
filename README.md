@@ -41,6 +41,8 @@ Project for I/O communication with COMX51 device via USB using Hilscher's netXSP
 - **COMXEB**: USB interface module containing COMX51
 - **COMX51**: PROFINET I/O Device (slave) with appropriate firmware, inside COMXEB
 - **PC**: Running this code, connected to COMXEB via USB
+- **Register Editor**: Ensure that in you register editor route "computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CIFxDrv" 
+                       your start driver is set to automatic (2, NOT 3), and your imagePath is correct "\SystemRoot\System32\drivers\BthHfAud.sys"
 - **Communication**: Real-time I/O data exchange between PLC and COMX51, accessed through COMXEB
 
 ## 🎯 Why This Project?
