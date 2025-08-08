@@ -2,7 +2,7 @@
 
 ## 📋 Description
 
-Project for I/O communication with COMX51 device via USB using Hilscher's netXSPMUSB API. Allows testing communication between a PLC via PROFINET and the COMX51 device.
+Project for I/O communication with COMX51 device via USB using Hilscher's netXSPMUSB API. Allows testing communication between a PLC via PROFINET and the COMX51 device. The COMX51 module is built around the Hilscher netX51 industrial communication SoC.
 
 ## 🔄 Test Architecture
 
@@ -39,7 +39,7 @@ Project for I/O communication with COMX51 device via USB using Hilscher's netXSP
 **Test Setup:**
 - **PLC**: PROFINET Controller (master) - connected directly to COMX51
 - **COMXEB**: USB interface module containing COMX51
-- **COMX51**: PROFINET I/O Device (slave) with appropriate firmware, inside COMXEB
+- **COMX51**: PROFINET I/O Device (slave) with appropriate firmware, inside COMXEB (netX51-based)
 - **PC**: Running this code, connected to COMXEB via USB
 - **Register Editor**: Ensure that in you register editor route "computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\CIFxDrv" 
                        your start driver is set to automatic (2, NOT 3), and your imagePath is correct "\SystemRoot\System32\drivers\BthHfAud.sys"
@@ -219,7 +219,7 @@ Notes:
 - **No additional cifX drivers required** - netXSPMUSB.dll is self-contained
 
 ### Hardware
-- COMX51 device connected via USB
+- COMX51 device (netX51-based) connected via USB
 - USB type A to micro-B cable
 
 ## 🔧 Troubleshooting
