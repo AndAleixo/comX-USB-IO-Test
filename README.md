@@ -253,15 +253,6 @@ Notes:
 - Device not enumerating as USB (driver not installed or cable/port issue).
 - Permissions. If access is denied, try running the console as Administrator.
 
-### Configurable parameters (source code)
-Edit these constants if needed:
-
-```c
-// src/COMX51_IO_Test.cpp
-#define IO_BUFFER_SIZE 1024
-#define TIMEOUT_MS 1000
-#define BOARD_NAME "cifX0"
-```
 
 ## 🖨️ Expected Console Output (Example)
 
@@ -290,14 +281,14 @@ Driver Version: netXSPMUSB DLL V1.10.0.0
 Board 0:
   Name: cifX0
   Alias:
-  Device Number: 1571100
-  Serial Number: 43394
+  Device Number: xxxxxxx
+  Serial Number: xxxx
 
   Channel 0:
     Channel Error: 0x00000000
     Board Name: cifX0
     Firmware: PROFINET IO Device
-    FW Version: 4.9.4 Build 0
+    FW Version: 4.x Build 0
     Mailbox Size: 1596
     I/O Input Areas: 2
     I/O Output Areas: 2
