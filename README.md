@@ -78,6 +78,17 @@ This project provides:
 - ✅ Automation scripts created
 - ✅ Program running correctly
 
+## 🧰 Setup
+
+1. Install Visual Studio 2022 (Desktop development with C++).
+2. Install one of the Hilscher USB drivers listed below in Requirements.
+3. Ensure the libraries are present in `lib/`:
+   - `lib/x64/Release/netXSPMUSB.{dll,lib}`
+   - `lib/x64/Debug/netXSPMUSB.{dll,lib}`
+   - `lib/x86/Release/netXSPMUSB.{dll,lib}` (optional, for Win32 build)
+   - `lib/x86/Debug/netXSPMUSB.{dll,lib}` (optional, for Win32 build)
+4. Build with the script or from the IDE (post-build copies `netXSPMUSB.dll` automatically).
+
 ## 🚀 Quick Compilation
 
 ### Automatic Script (Recommended)
@@ -144,12 +155,10 @@ cifx-usb-io-test/
 ### x64 Release (Recommended)
 ```
 build\x64\Release\
-├── COMX51_IO_Test.exe 
-├── COMX51_IO_Test.pdb 
-├── netXSPMUSB.dll     
-├── cifX32DLL.dll      
-├── cifX32DLL64.dll    
-└── vc143.pdb          
+├── COMX51_IO_Test.exe
+├── COMX51_IO_Test.pdb
+├── netXSPMUSB.dll
+└── vc143.pdb
 ```
 
 ### Win32 Release
@@ -174,6 +183,11 @@ build_vs.bat x64 Release
 # Run the program
 build\x64\Release\COMX51_IO_Test.exe
 ```
+
+Notes:
+- Run from a terminal with access to the output folder, or double-click the EXE in Explorer.
+- Stop the I/O loop by pressing the key `Q` in the console.
+- For Win32 (x86), build `Win32 Release` and run from `build\Win32\Release\`.
 
 ### 3. Connect Hardware
 - Connect COMX51 device via USB
@@ -230,3 +244,93 @@ build\x64\Release\COMX51_IO_Test.exe
 - Check Device Manager to ensure COMX51 is properly recognized
 - Try different USB cable or port
 - Restart computer and reconnect device
+
+### Common pitfalls
+- Architecture mismatch (x64 app with x86 DLL or vice-versa). Build and DLL must match.
+- Board name mismatch. Code expects board alias `cifX0` by default (see Configurable parameters).
+- Device not enumerating as USB (driver not installed or cable/port issue).
+- Permissions. If access is denied, try running the console as Administrator.
+
+### Configurable parameters (source code)
+Edit these constants if needed:
+
+```c
+// src/COMX51_IO_Test.cpp
+#define IO_BUFFER_SIZE 1024
+#define TIMEOUT_MS 1000
+#define BOARD_NAME "cifX0"
+```
+
+## 🖨️ Expected Console Output (Example)
+
+Note: The exact values depend on your COMX configuration (number/size of I/O areas, firmware, etc.). This is an example of a correct run after the board is configured and connected.
+
+```
+========================================
+  COMX51 I/O Test - PROFINET
+========================================
+
+Starting program...
+Checking available DLLs...
+
+Testing loading of netXSPMUSB.dll...
+SUCCESS: netXSPMUSB.dll loaded correctly!
+Main functions found!
+
+Checking if cifX driver is available...
+Opening cifX driver...
+cifX driver opened successfully!
+
+=== Driver Information ===
+Driver Version: netXSPMUSB DLL V1.10.0.0
+
+=== Board Information ===
+Board 0:
+  Name: cifX0
+  Alias:
+  Device Number: 1571100
+  Serial Number: 43394
+
+  Channel 0:
+    Channel Error: 0x00000000
+    Board Name: cifX0
+    Firmware: PROFINET IO Device
+    FW Version: 4.9.4 Build 0
+    Mailbox Size: 1596
+    I/O Input Areas: 2
+    I/O Output Areas: 2
+    netX Flags: 0x000000F1
+    Host Flags: 0x000000F0
+
+  Channel 1:
+    Channel Error: 0x00000000
+    Board Name: cifX0
+    Firmware: Network Services
+    FW Version: 1.0.0 Build 0
+    Mailbox Size: 1596
+    I/O Input Areas: 2
+    I/O Output Areas: 2
+    netX Flags: 0x00000038
+    Host Flags: 0x00000038
+
+=== I/O Communication Test ===
+Channel opened successfully!
+Host configured as READY
+Bus configured as ON
+
+Starting I/O cycle...
+Press 'Q' to stop
+
+Cycle 1 - Input: 0x3A 0x00 0x00 0x00 0x00 0x00 0x00 0x00 ...
+Cycle 1 - Output: 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00 ...
+---
+Cycle 2 - Input: 0x73 0x00 0x00 0x00 0x00 0x00 0x00 0x00 ...
+Cycle 2 - Output: 0x02 0x00 0x00 0x00 0x00 0x00 0x00 0x00 ...
+---
+Cycle 3 - Input: 0x74 0x00 0x00 0x00 0x00 0x00 0x00 0x00 ...
+Cycle 3 - Output: 0x03 0x00 0x00 0x00 0x00 0x00 0x00 0x00 ...
+---
+Cycle 4 - Input: 0x75 0x00 0x00 0x00 0x00 0x00 0x00 0x00 ...
+Cycle 4 - Output: 0x04 0x00 0x00 0x00 0x00 0x00 0x00 0x00 ...
+---
+```

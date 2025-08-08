@@ -103,6 +103,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>netXSPMUSB.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>$(SolutionDir)post_build.bat "$(TargetDir)" "$(ConfigurationName)" "$(PlatformName)"</Command>
@@ -180,12 +181,6 @@
     <ClInclude Include="includes\cifXAPI\cifXErrors.h" />
     <ClInclude Include="includes\cifXAPI\cifXUser.h" />
     <ClInclude Include="includes\HilscherDefinitions\netXAPI.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="lib\x64\Debug\netXSPMUSB.lib" />
-    <Library Include="lib\x64\Release\netXSPMUSB.lib" />
-    <Library Include="lib\x86\Debug\netXSPMUSB.lib" />
-    <Library Include="lib\x86\Release\netXSPMUSB.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

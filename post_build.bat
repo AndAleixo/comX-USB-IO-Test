@@ -49,27 +49,13 @@ if not exist "%LIB_DIR%" (
     exit /b 1
 )
 
-REM Copy main DLLs
+REM Copy netXSPMUSB.dll (once)
 echo Copying netXSPMUSB.dll...
 if exist "%LIB_DIR%\netXSPMUSB.dll" (
-    copy "%LIB_DIR%\netXSPMUSB.dll" "%1" >nul
+    copy /Y "%LIB_DIR%\netXSPMUSB.dll" "%1" >nul
     if errorlevel 1 (
         echo ERROR: Could not copy netXSPMUSB.dll
         exit /b 1
-    ) else (
-        echo ✓ netXSPMUSB.dll copied successfully
-    )
-) else (
-    echo WARNING: netXSPMUSB.dll not found in %LIB_DIR%
-)
-
-REM Copy only netXSPMUSB.dll
-echo Copying netXSPMUSB.dll...
-
-if exist "%LIB_DIR%\netXSPMUSB.dll" (
-    copy "%LIB_DIR%\netXSPMUSB.dll" "%1" >nul
-    if errorlevel 1 (
-        echo ERROR: Could not copy netXSPMUSB.dll
     ) else (
         echo ✓ netXSPMUSB.dll copied successfully
     )
