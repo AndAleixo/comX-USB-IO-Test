@@ -383,10 +383,6 @@ build/
 build/**/*.dll
 build/**/*.lib
 
-# COMX51 specific
-# Include lib directory with DLLs and LIBs
-# lib/*/Debug/*.dll
-# lib/*/Release/*.dll
-# lib/*/Debug/*.lib
-# lib/*/Release/*.lib
-
+# Allow vendor binaries under lib/ to be tracked
+!lib/
+!lib/**
