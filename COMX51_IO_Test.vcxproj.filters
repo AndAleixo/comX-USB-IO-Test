@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>lib</Extensions>
+    </Filter>
+    <Filter Include="Hilscher API">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hilscher API\cifX API">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hilscher API\Hilscher Definitions">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\x64">
+      <UniqueIdentifier>{75e56c78-9c1a-4fab-9eac-ed4b62df1da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\x86">
+      <UniqueIdentifier>{33e430c1-034d-4296-83bd-ff34f498fde4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\x86\Debug">
+      <UniqueIdentifier>{7de92668-c165-4ffd-945a-d30289a2d5fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\x86\Release">
+      <UniqueIdentifier>{047457d4-417a-4f7c-a308-7159ac73130d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\x64\Debug">
+      <UniqueIdentifier>{fe0690cf-6e98-42bf-b804-be90ce8297d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\x64\Release">
+      <UniqueIdentifier>{9f369588-7bab-4d4a-8e19-49349907ffe5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\COMX51_IO_Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\cifXAPI\cifXErrors.h">
+      <Filter>Hilscher API\cifX API</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\cifXAPI\cifXUser.h">
+      <Filter>Hilscher API\cifX API</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\HilscherDefinitions\netXAPI.h">
+      <Filter>Hilscher API\Hilscher Definitions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll" />
+    <None Include="lib\netXSPMUSB.lib" />
+    <None Include="lib\x64\Debug\cifX32DLL.dll" />
+    <None Include="lib\x64\Debug\cifX32DLL64.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x64\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x64\Release\cifX32DLL.dll" />
+    <None Include="lib\x64\Release\cifX32DLL64.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.dll" />
+    <None Include="lib\x64\Release\netXSPMUSB.lib" />
+    <None Include="lib\x86\Debug\netXSPMUSB.dll" />
+    <None Include="lib\x86\Debug\netXSPMUSB.lib" />
+    <None Include="lib\x86\Release\netXSPMUSB.dll" />
+    <None Include="lib\x86\Release\netXSPMUSB.lib" />
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\netXSPMUSB.lib">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries\NewFilter1</Filter>
+    </None>
+    <None Include="lib\x86\Debug\netXSPMUSB.dll">
+      <Filter>Libraries\x86\Debug</Filter>
+    </None>
+    <None Include="lib\x86\Release\netXSPMUSB.dll">
+      <Filter>Libraries\x86\Release</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL.dll">
+      <Filter>Libraries\x64\Debug</Filter>
+    </None>
+    <None Include="lib\x64\Debug\cifX32DLL64.dll">
+      <Filter>Libraries\x64\Debug</Filter>
+    </None>
+    <None Include="lib\x64\Debug\netXSPMUSB.dll">
+      <Filter>Libraries\x64\Debug</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL.dll">
+      <Filter>Libraries\x64\Release</Filter>
+    </None>
+    <None Include="lib\x64\Release\cifX32DLL64.dll">
+      <Filter>Libraries\x64\Release</Filter>
+    </None>
+    <None Include="lib\x64\Release\netXSPMUSB.dll">
+      <Filter>Libraries\x64\Release</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\x86\Debug\netXSPMUSB.lib">
+      <Filter>Libraries\x86\Debug</Filter>
+    </Library>
+    <Library Include="lib\x86\Release\netXSPMUSB.lib">
+      <Filter>Libraries\x86\Release</Filter>
+    </Library>
+    <Library Include="lib\x64\Debug\netXSPMUSB.lib">
+      <Filter>Libraries\x64\Debug</Filter>
+    </Library>
+    <Library Include="lib\x64\Release\netXSPMUSB.lib">
+      <Filter>Libraries\x64\Release</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
